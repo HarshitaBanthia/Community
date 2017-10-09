@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInOptions gso;
     public static  GoogleApiClient mGoogleApiClient;
     private static final int RC_SIGN_IN = 9001;
-    private static final int RC_S = 9001;
+    public static  int Re = -1;
     private FirebaseAuth mAuth;
     SharedPreferences sp;
     SharedPreferences.Editor spe;
@@ -101,12 +101,14 @@ public class MainActivity extends AppCompatActivity {
     }*/
     public void gShow(View view)
     {
+        Re=1;
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
 
     }
     public void fsh(View view)
     {
+        Re=0;
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("user_photos", "email", "public_profile"));
         LoginManager.getInstance().registerCallback(mCallbackManager,
                 new FacebookCallback<LoginResult>()
