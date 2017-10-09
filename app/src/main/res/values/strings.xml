@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Community</string>
+    <string name="facebook_app_id">731109143756963</string>
+    <string name="fb_login_protocol_scheme">fb731109143756963</string>
 </resources>

@@ -12,13 +12,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="facebook"
-        android:onClick="fShow"
-        android:id="@+id/f"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="...."
-        android:id="@+id/tv"/>
+        android:text="Facebook"
+        android:onClick="fsh"
+        android:id="@+id/g1"/>
 </LinearLayout>
